@@ -1,0 +1,9 @@
+
+img {
+    max-width: 60%;
+    max-height: 60%;
+    align-self: center;
+  }
+.d-block w-100{
+    align-items: center;
+}  

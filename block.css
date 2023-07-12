@@ -1,0 +1,33 @@
+.container {
+    background-color: green;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+   
+  }
+  
+  .block {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: white;
+  }
+  
+  /* Media queries for desktop view */
+  @media only screen and (max-width: 1024px) {
+    .container {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  
+  /* Media queries for mobile view */
+  @media only screen and (max-width: 450px) {
+    .container {
+      background-color: blue;
+    }
+    .block {
+      width: 100%;
+    }
+  }
+  

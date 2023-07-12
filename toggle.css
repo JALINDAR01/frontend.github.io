@@ -1,0 +1,32 @@
+input.toggle-round {
+    display:none;
+  }
+  input.toggle-round + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+  }
+  input.toggle-round + label {
+    padding: 1px;
+    width: 100px;
+    height: 50px;
+    background-color: #ddd;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+  }
+  input.toggle-round + label:after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 50px; height: 50px;
+    background-color: white;
+    border-radius: 100%;
+    box-shadow: 0 2px 3px #888;
+    transition: margin 0.5s;
+  }
+  input.toggle-round:checked + label {
+    background-color: lightblue;
+  }
+  input.toggle-round:checked + label:after {
+    margin-left: 50px;
+  }
